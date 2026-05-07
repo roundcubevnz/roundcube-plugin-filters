@@ -12,6 +12,8 @@
 
 class filters extends rcube_plugin{
 
+  public $rc; /** better long term fix https://github.com/roundcubevnz/roundcube-plugin-filters/pull/3/changes#diff-32a845190b3b603fd750528baffd71709ab0627877ba794f3d4984d403d68686R17 */
+	
   public $task = 'login|mail|settings';
 
   private $autoAddSpamFilterRule;
